@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Joseph, ¿quieres ser mi San Valentín?</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f8c2d1;
+            margin: 0;
+            padding: 0;
+            text-align: center;
+        }
+        header {
+            background-color: #ff80ab;
+            color: white;
+            padding: 50px 0;
+            font-size: 36px;
+            font-weight: bold;
+        }
+        .container {
+            padding: 20px;
+        }
+        .button {
+            background-color: #ff80ab;
+            color: white;
+            padding: 20px 40px;
+            border: none;
+            border-radius: 10px;
+            cursor: pointer;
+            font-size: 24px;
+            margin: 20px;
+        }
+        .button:hover {
+            background-color: #ff4081;
+        }
+        .image {
+            margin-top: 30px;
+        }
+        .image img {
+            max-width: 300px;
+        }
+        .text-center {
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        Joseph, ¿quieres ser mi San Valentín? 
+    </header>
+
+    <div class="container">
+        <button class="button" onclick="mostrarMariposas()">Vaaaa</button>
+        <button class="button" onclick="mostrarPerro()">Jajaja, no</button>
+
+        <div class="image" id="respuesta">
+        </div>
+    </div>
+
+    <script>
+        function mostrarMariposas() {
+            document.getElementById("respuesta").innerHTML = `
+                <p>Tonoooooo</p>
+                <img src="img/uwu.gif" alt="Mariposas">
+           `;
+        }
+
+        function mostrarPerro() {
+            document.getElementById("respuesta").innerHTML =`
+                <p>Pa eso</p>
+                <img src="img/cabron.gif" alt="Perrito llorando">
+           `;
+        }
+    </script>
+
+</body>
+</html>
